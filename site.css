@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  background: #AEFFF7;
+  font-family: Poppins;
+  font-weight: 300;
+
+}
+
+article {
+          columns: 4 200px;
+          margin-left: 2vh;
+          margin-right: 2vh;
+}
+
+
+p {
+color:#70706F;
+}
+
+p1 {
+
+  margin-top: 0;
+  margin-right: 5vh;
+  margin-left: 5vh;
+  text-align: left;
+}
+
+br {
+
+  margin-top: 0;
+  margin-right: 5vh;
+  margin-left: 8vh;
+  text-align: left;
+}
+
+h1,h2,h3,h4,p,br {
+  font-family: popiins;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+p {
+  font-family: popiins;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+h1 {
+          column-span: all;
+          font-size: 50px;
+          line-height: 2;
+          margin-left: 2vh;
+          margin-right: 2vh;
+          text-align: center;
+          padding-top: 20px;
+}
+
+h2 {
+          column-span: all;
+          font-size: 40px;
+          line-height: 2;
+          margin-left: 2vh;
+          margin-right: 2vh;
+          text-align: center;
+          padding-top: 20px;
+}
+h3 {
+  column-span: all;
+  font-size: 20px;
+  line-height: 2;
+  margin: 5px;
+}
+h3 {
+  font-size: 20px;
+  line-height: 2;
+  margin-left: 2vh;
+  margin-right: 2vh;
+
+}
+
+/*SECTION*/
+
+.container {
+    border: solid 1px lightgray;
+    border-radius: 10px;
+    box-shadow: 5px 3px 20px 3px; /* x-axis, y-axis, blurrness, spread radius */
+    background-color: seashell;
+    box-sizing: border-box;
+    max-width: 100rem;
+    padding: 0 2rem 2rem;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+  /*smartphones mobiles (portrait)*/
+  @media (max-width: 480px) {
+   body {
+     color : black;
+   }
+  }
+
+  /*low resolution tablets, mobiles (landscape)*/
+  @media (min-width: 481px) and (max-width: 767px) {
+    body {
+      color: black;
+    }
+  }
+
+  /*tablets, ipads (landscape)*/
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      color: black;
+    }
+  }
+
+  /*laptops, desktops*/
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+      color : black;
+    }
+  }
+
+  /*desktops - higher resolution*/
+  @media (min-width: 1281px) {
+    body {
+      color : black;
+    }
+  }
+
+/*navbar*/
+
+.container1{
+  width: 90%;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #333;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  display: block;
+  padding: 0;
+  margin: 30px 0;
+  list-style-type : none;
+  display: flex;
+}
+
+nav a{
+  display: block;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  color: #eee;
+  text-decoration: none;
+  background-color: #111;
+}
+
+nav a:hover{
+  background-color: #555;
+}
+
+
+
+/*Animation qui va bouger le menu mobile vers la gauche lorsqu'il doit être affiché'*/
+@keyframes menuShow {
+  0% {
+    right: -200px;
+  } /*en dehosr de la vue*/
+  100% {
+    right: 0;
+  } /* visible*/
+}
+
+header input[type="checkbox"]{
+  display: none;
+}
+
+header input[type="checkbox"]:checked ~ nav{
+  display: block;
+  animation: menuShow 0.5s normal;
+}
+
+header label{
+  float: right;
+  display: none;
+  font-size: 2rem;
+  line-height: 100px;
+  cursor: pointer;
+  color: #eee;
+}
+
+@media screen and (max-width: 600px){
+  header label{
+    display: block;
+  }
+
+  header nav{
+    position: absolute;
+    z-index: 10;
+    display: none;
+    right: 0em;
+    top: 100px;
+    width: 150px;
+  }
+
+  nav ul{
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+
+  .image img{
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 4px 7px 16px -3px #000000;
+  }
+
+  .image img{
+      width: 200px;
+      height: 200px;
+      border-radius: 90px;
+      box-shadow: 4px 7px 16px -3px #000000;
+  }
+
+.main{
+      display: block;
+      column-count: 3;
+      padding-bottom: 100px;
+}
+
+/* Footer */
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+/* Image gallery*/
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+Gallery
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+/*
+
+carte
+
+*/
+
+.carte {
+  align-items: : center;
+}
+
+/* bouton */
+
+.btn-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  display: inline-block;
+  padding: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+.btn:hover{
+	background-color: #3B3B3B;
+	color: #c8c8c8;
+	cursor: pointer;
+}

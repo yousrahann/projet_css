@@ -1,0 +1,72 @@
+body {
+background-color: #33FFDF;
+text-align: center;
+font-family: 'PT Serif', serif;
+}
+
+h1 {
+color: #3360FF;
+font-family: 'Square Peg', cursive;
+}
+
+
+h4,li {
+text-align: left;
+}
+
+h2,p {
+text-align: center;
+}
+
+
+.header{
+    background-image: url(img/plage_bora-bora.jpeg);
+  }
+
+
+  .image img{
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 4px 7px 16px -3px #000000;
+  }
+
+  .image img{
+      width: 200px;
+      height: 200px;
+      border-radius: 90px;
+      box-shadow: 4px 7px 16px -3px #000000;
+  }
+
+
+
+
+/*
+* {
+  box-sizing: border-box;
+}
+/*
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+<div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
