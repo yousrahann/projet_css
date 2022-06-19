@@ -50,7 +50,7 @@ p {
 h1 {
           column-span: all;
           font-size: 50px;
-          line-height: 2;
+          line-height: 1;
           margin-left: 2vh;
           margin-right: 2vh;
           text-align: center;
@@ -86,7 +86,7 @@ h3 {
     border: solid 1px lightgray;
     border-radius: 10px;
     box-shadow: 5px 3px 20px 3px; /* x-axis, y-axis, blurrness, spread radius */
-    background-color: seashell;
+    background-color: #F4F4F4;
     box-sizing: border-box;
     max-width: 100rem;
     padding: 0 2rem 2rem;
@@ -101,7 +101,7 @@ h3 {
    }
   }
 
-  /*low resolution tablets, mobiles (landscape)*/
+  /**/
   @media (min-width: 481px) and (max-width: 767px) {
     body {
       color: black;
@@ -173,7 +173,7 @@ nav a:hover{
 
 
 
-/*Animation qui va bouger le menu mobile vers la gauche lorsqu'il doit être affiché'*/
+/**/
 @keyframes menuShow {
   0% {
     right: -200px;
@@ -243,6 +243,8 @@ header label{
 }
 
 /* Footer */
+
+
 .footer {
   background: #F4F4F4;
   display: flex;
@@ -253,7 +255,6 @@ header label{
   color: rgba(0,0,0,0.3);
 }
 .footer-links {
-  display: flex;
   align-items: center;
 }
 .footer-links a {
@@ -285,9 +286,7 @@ header label{
 }
 
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
 	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
@@ -324,16 +323,26 @@ Gallery
 	}
 }
 
+/*YouTube*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .youtube{
+   width: 100%;
+  }
+}
 
-/*
 
-carte
-
-*/
+/*carte*/
 
 .carte {
   align-items: : center;
+
 }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    .carte {
+
+    }
+  }
 
 /* bouton */
 
@@ -348,14 +357,17 @@ carte
   padding: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: #dadada;
+  color: #000000;
   text-align: center;
   transition: 0.5s;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .btn:hover{
 	background-color: #3B3B3B;
-	color: #c8c8c8;
+	color: #c0c0c0;
 	cursor: pointer;
 }
